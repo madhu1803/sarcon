@@ -86,6 +86,7 @@
 .mdl-tabs__tab {
   margin: 1% auto;
   color: white !important;
+  text-transform: none !important;
 }
 
 .mdl-tabs__tab:hover {
@@ -99,4 +100,10 @@
 
 .mdl-tabs__tab>.icon {
   padding-top: 10px;
+}
+
+
+.custom_navigation_span>span {
+  position: relative;
+  bottom: 4px;
 }
