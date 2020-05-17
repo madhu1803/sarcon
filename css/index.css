@@ -118,10 +118,7 @@ hr {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* .row {
-  margin-top: 1%;
-  margin-bottom: 1%;
-} */
+
 
 .done {
   display: none;
@@ -132,6 +129,16 @@ hr {
   font-weight: 900;
   font-family: sans-serif;
   font-size: 42px;
+}
+
+.alert {
+  background: #DE3438 !important;
+  color: white !important;
+  margin-bottom: 0 !important;
+}
+
+ul {
+  line-height: 16px !important;
 }
 
 /* modal */
@@ -145,7 +152,7 @@ hr {
   color: white;
 }
 
-.modal-dialog {
+.mymodal-dialog {
   min-width: 280px;
   max-width: 300px;
   position: fixed;
@@ -155,4 +162,13 @@ hr {
 
 a {
   color: White !important;
+}
+
+.event-modal-dialog {
+  max-width: 900px !important;
+  position: fixed;
+  top: 90px;
+  right: 40px;
+  left: 30px;
+  bottom: 0;
 }
