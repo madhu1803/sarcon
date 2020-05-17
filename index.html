@@ -56,7 +56,8 @@
             <a href="#Generalchat-panel" class="mdl-tabs__tab"><span class="icon material-icons">chat</span>
                 <span class="custom_navigation_span">
                     <span>General Chat</span></span></a>
-            <a href="#Prizecenter-panel" class="mdl-tabs__tab "><span class="icon material-icons">emoji_events</span>
+            <a href="#Prizecenter-panel" class="mdl-tabs__tab " id="events_page"><span
+                    class="icon material-icons">emoji_events</span>
                 <span class="custom_navigation_span">
                     <span>Events</span></span></a>
         </div>
@@ -71,7 +72,7 @@
                             <h1 class="mb-4 text-center">THE CHALLENGES OF BUSINESS INNOVATION</h1>
                             <p class="mb-5lead text-white text-center">Click Here to View Sessions</p>
 
-                            <div class="w-100 text-center"><a href="#Prizecenter-panel"
+                            <div class="w-100 text-center"><a onclick="events()"
                                     class="btn  px-4 py-3 text-uppercase auditorium-btn">View
                                     Session</a></div>
                         </div>
@@ -89,7 +90,7 @@
                     <h1 class="mb-4 text-center">THE CHALLENGES OF BUSINESS INNOVATION</h1>
                     <p class="mb-5lead text-white text-center">Click Here to View Sessions</p>
 
-                    <div class="w-100 text-center"><a href="Agenda.html"
+                    <div class="w-100 text-center"><a onclick="events()"
                             class="btn  px-4 py-3 text-uppercase auditorium-btn">View
                             Session</a></div>
                 </div>
@@ -126,8 +127,7 @@
                     <h1 class="mb-4 text-center">THE CHALLENGES OF BUSINESS INNOVATION</h1>
                     <p class="mb-5lead text-white text-center">Click Here to View Sessions</p>
 
-                    <div class="w-100 text-center"><a href="Agenda.html"
-                            class="btn  px-4 py-3 text-uppercase auditorium-btn">View
+                    <div class="w-100 text-center"><a class="btn  px-4 py-3 text-uppercase auditorium-btn">View
                             Session</a></div>
                 </div>
             </div>
@@ -142,7 +142,7 @@
                     <h1 class="mb-4 text-center">THE CHALLENGES OF BUSINESS INNOVATION</h1>
                     <p class="mb-5lead text-white text-center">Click Here to View Sessions</p>
 
-                    <div class="w-100 text-center"> <a href="Agenda.html"
+                    <div class="w-100 text-center"> <a onclick="events()"
                             class="btn  px-4 py-3 text-uppercase auditorium-btn">View Session</a></div>
                 </div>
             </div>
@@ -156,7 +156,7 @@
                     <h1 class="mb-4 text-center">THE CHALLENGES OF BUSINESS INNOVATION</h1>
                     <p class="mb-5lead text-white text-center">Click Here to View Sessions</p>
 
-                    <div class="w-100 text-center"> <a href="Agenda.html"
+                    <div class="w-100 text-center"> <a onclick="events()"
                             class="btn  px-4 py-3 text-uppercase auditorium-btn">View Session</a></div>
                 </div>
             </div>
@@ -169,7 +169,7 @@
 
                     <h1 class="mb-4 text-center">THE CHALLENGES OF BUSINESS INNOVATION</h1>
                     <p class="mb-5lead text-white text-center">Click Here to View Sessions</p>
-                    <div class="w-100 text-center"> <a href="Agenda.html"
+                    <div class="w-100 text-center"> <a onclick="events()"
                             class="btn  px-4 py-3 text-uppercase auditorium-btn">View
                             Session</a></div>
                 </div>
@@ -183,7 +183,7 @@
 
                     <h1 class="mb-4 text-center">THE CHALLENGES OF BUSINESS INNOVATION</h1>
                     <p class="mb-5 lead text-white text-center">Click Here to View Sessions</p>
-                    <div class="w-100 text-center"> <a href="Agenda.html"
+                    <div class="w-100 text-center"> <a onclick="events()"
                             class="btn  px-4 py-3 text-uppercase auditorium-btn">View
                             Session</a></div>
                 </div>
@@ -197,7 +197,7 @@
 
                     <h1 class="mb-4 text-center">THE CHALLENGES OF BUSINESS INNOVATION</h1>
                     <p class="mb-5lead text-white text-center">Click Here to View Sessions</p>
-                    <div class="w-100 text-center"> <a href="Agenda.html"
+                    <div class="w-100 text-center"> <a onclick="events()"
                             class="btn  px-4 py-3 text-uppercase auditorium-btn">View
                             Session</a></div>
                 </div>
@@ -427,6 +427,11 @@
         $('.carousel').carousel({
             pause: "false"
         });
+    </script>
+    <script>
+        function events() {
+            document.getElementById('events_page').click()
+        }
     </script>
     </head>
 </body>

@@ -66,7 +66,7 @@
 }
 
 .auditorium-btn {
-  color: #fff;
+  color: #fff !;
   background-color: #f23a2e;
   border-color: #f23a2e;
   align-items: center;
