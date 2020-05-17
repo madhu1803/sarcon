@@ -408,12 +408,12 @@
     <div class="modal-dialog event-modal-dialog" role="document" id="eventmodal">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Announcement</h5>
+                <h5 class="modal-title">Events List</h5>
                 <button type="button" class="close" onclick="eventmodal()">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body" id="even-modal-body">
 
                 <div class="container">
                     <div class="about-heading">
@@ -682,6 +682,7 @@
         $(".auditorium-btn").click(function () {
             document.getElementById("eventmodal").style.display = 'block';
         });
+        $('#eventmodal').animate({ scrollTop: $('#eventmodal .modal-content').height() }, 'slow');
 
     </script>
 
