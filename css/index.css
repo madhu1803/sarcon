@@ -133,3 +133,26 @@ hr {
   font-family: sans-serif;
   font-size: 42px;
 }
+
+/* modal */
+.modal-header {
+  background-color: #f23a2e;
+  color: white;
+}
+
+
+.modal-header>button {
+  color: white;
+}
+
+.modal-dialog {
+  min-width: 280px;
+  max-width: 300px;
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+}
+
+a {
+  color: White !important;
+}

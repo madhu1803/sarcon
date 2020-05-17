@@ -406,6 +406,26 @@
         </div>
     </div>
     </div>
+    <!--modal-->
+
+    <div class="modal-dialog" role="document" id="mymodal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Announcement</h5>
+                <button type="button" class="close" onclick="mymodal()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <p>Modal body text goes here.</p>
+
+
+            </div>
+
+        </div>
+    </div>
+
 
     <!--aod animate js-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -427,10 +447,13 @@
         $('.carousel').carousel({
             pause: "false"
         });
-    </script>
-    <script>
         function events() {
             document.getElementById('events_page').click()
+        }
+        $('#mymodal').show()
+
+        function mymodal() {
+            document.getElementById('mymodal').style.display = 'none'
         }
     </script>
     </head>
