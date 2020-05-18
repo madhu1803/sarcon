@@ -70,4 +70,8 @@ input::placeholder {
     #left-box {
         display: block;
     }
+
+    #close {
+        display: block;
+    }
 }

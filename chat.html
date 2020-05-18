@@ -94,8 +94,10 @@
 
                 <div class=" chat-box bg-white">
                     <div class="recent px-4 py-2 bg-white">
-                        <p class="h5 mb-0 py-1">Jason Doe</p>
-                        <!-- <img src="https://img.icons8.com/color/20/000000/close-window.png" class="my-2 my-lg-0" /> -->
+                        <p class="h5 mb-0 py-1">Jason Doe
+                            <img src="https://img.icons8.com/color/20/000000/close-window.png" class="mr-5" id="close"
+                                onclick="closeMessage()" /></p>
+
                     </div>
 
                     <div class="px-4 py-5">
@@ -174,6 +176,20 @@
                 if (document.getElementById("left-box").style.display === "block") {
                     document.getElementById("left-box").style.display = "none"
                     document.getElementById("right-box").style.display = "block"
+                } else {
+                    document.getElementById("left-box").style.display = "block"
+                    document.getElementById("right-box").style.display = "none"
+                }
+            }
+        }
+        function closeMessage() {
+            // on clicked close button
+            if ($(window).width() < 768) {
+                // execute only on mobile view || screen size is less thatn 768px
+                // basic toggle operation...
+                if (document.getElementById("right-box").style.display === "block") {
+                    document.getElementById("left-box").style.display = "block"
+                    document.getElementById("right-box").style.display = "none"
                 } else {
                     document.getElementById("left-box").style.display = "block"
                     document.getElementById("right-box").style.display = "none"
