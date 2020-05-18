@@ -65,7 +65,8 @@
   line-height: 1.5;
 }
 
-.auditorium-btn {
+.auditorium-btn,
+.chat-btn {
   color: #fff !;
   background-color: #f23a2e;
   border-color: #f23a2e;
