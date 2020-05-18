@@ -60,3 +60,14 @@ input::placeholder {
 .receiver {
     background-image: linear-gradient(90deg, #EE5D53 10%, #ED5165 30%, #DE3964 60%) !important;
 }
+
+@media only screen and (max-width: 768px) {
+
+    #right-box {
+        display: none;
+    }
+
+    #left-box {
+        display: block;
+    }
+}

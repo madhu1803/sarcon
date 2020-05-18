@@ -39,7 +39,7 @@
 
         <div class="row rounded-lg overflow-hidden shadow">
             <!-- Users box-->
-            <div class="col-sm-12 col-md-12 col-lg-5 px-0">
+            <div class="col-md-5 px-0" id="left-box">
                 <div class="bg-white">
 
                     <div class="recent px-4 py-2 bg-white">
@@ -48,8 +48,9 @@
 
                     <div class="messages-box">
                         <div class="list-group rounded-0">
-                            <a class="list-group-item list-group-item-action active text-white rounded-0">
-                                <div class="media"><img
+                            <a class="list-group-item list-group-item-action active text-white rounded-0 list-1"
+                                onclick="showMessage()">
+                                <div class=" media"><img
                                         src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg"
                                         alt="user" width="50" class="rounded-circle">
                                     <div class="media-body ml-4">
@@ -87,36 +88,45 @@
                 </div>
             </div>
             <!-- Chat Box-->
-            <div class="d-none d-lg-block col-7 px-0">
+            <div class="col-md-7 px-0 " id="right-box">
 
-                <div class="px-4 py-5 chat-box bg-white">
 
-                    <!-- Sender Message-->
-                    <div class="media w-50 mb-3"><img
-                            src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user"
-                            width="50" class="rounded-circle">
-                        <div class="media-body ml-3">
-                            <div class="bg-white rounded py-2 px-3 mb-2">
-                                <p class="text-small mb-0 text-muted">Test which is a new approach all solutions</p>
-                            </div>
-                            <p class="small text-muted">12:00 PM | Aug 13</p>
-                        </div>
+
+                <div class=" chat-box bg-white">
+                    <div class="recent px-4 py-2 bg-white">
+                        <p class="h5 mb-0 py-1">Jason Doe</p>
+                        <!-- <img src="https://img.icons8.com/color/20/000000/close-window.png" class="my-2 my-lg-0" /> -->
                     </div>
 
-                    <!-- Reciever Message-->
-                    <div class="media w-50 ml-auto mb-3">
-                        <div class="media-body">
-                            <div class="bg-danger rounded receiver py-2 px-3 mb-2">
-                                <p class="text-small mb-0 text-white">Test which is a new approach to have all
-                                    solutions
-                                </p>
+                    <div class="px-4 py-5">
+                        <!-- Sender Message-->
+                        <div class="media w-50 mb-3"><img
+                                src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg"
+                                alt="user" width="50" class="rounded-circle">
+                            <div class="media-body ml-3">
+                                <div class="bg-white rounded py-2 px-3 mb-2">
+                                    <p class="text-small mb-0 text-muted">Test which is a new approach all solutions</p>
+                                </div>
+                                <p class="small text-muted">12:00 PM | Aug 13</p>
                             </div>
-                            <p class="small text-muted">12:00 PM | Aug 13</p>
                         </div>
+
+                        <!-- Reciever Message-->
+                        <div class="media w-50 ml-auto mb-3">
+                            <div class="media-body">
+                                <div class="bg-danger rounded receiver py-2 px-3 mb-2">
+                                    <p class="text-small mb-0 text-white">Test which is a new approach to have all
+                                        solutions
+                                    </p>
+                                </div>
+                                <p class="small text-muted">12:00 PM | Aug 13</p>
+                            </div>
+                        </div>
+
+
+
+
                     </div>
-
-
-
 
                 </div>
 
@@ -148,6 +158,30 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
         </script>
+    <script>
+
+        // init the boxes on the mobile view
+        if ($(window).width() < 768) {
+            document.getElementById("left-box").style.display = "block"
+            document.getElementById("right-box").style.display = "none"
+        }
+
+        function showMessage() {
+            // on clicked
+            if ($(window).width() < 768) {
+                // execute only on mobile view || screen size is less thatn 768px
+                // basic toggle operation...
+                if (document.getElementById("left-box").style.display === "block") {
+                    document.getElementById("left-box").style.display = "none"
+                    document.getElementById("right-box").style.display = "block"
+                } else {
+                    document.getElementById("left-box").style.display = "block"
+                    document.getElementById("right-box").style.display = "none"
+                }
+            }
+        }
+
+    </script>
 </body>
 
 </html>
