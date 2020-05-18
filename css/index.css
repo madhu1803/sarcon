@@ -178,3 +178,7 @@ a {
   max-height: 600px;
   overflow: auto;
 }
+
+.mdl-tabs__tab-bar {
+  overflow: auto;
+}
