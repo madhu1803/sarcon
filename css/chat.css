@@ -52,11 +52,11 @@ input::placeholder {
 }
 
 .list-group-item.active {
-    background-image: linear-gradient(90deg, #EE5D53 0%, #DE3964 100%);
+    background-image: linear-gradient(90deg, #EE5D53 10%, #ED5165 30%, #DE3964 60%);
     /* background-color: #DC3545; */
     border-color: #DC3545;
 }
 
 .receiver {
-    background-image: linear-gradient(90deg, #EE5D53 0%, #DE3964 100%) !important;
+    background-image: linear-gradient(90deg, #EE5D53 10%, #ED5165 30%, #DE3964 60%) !important;
 }
