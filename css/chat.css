@@ -1,5 +1,5 @@
 body {
-  background-color: wheat;
+  background-color: #002f9d;
 
   min-height: 100vh;
 }
@@ -73,8 +73,8 @@ input::placeholder {
     #4ebeda 60%
   ) !important;
 }
-
-@media only screen and (max-width: 768px) {
+/* mobile view */
+@media only screen and (max-width: 760px) {
   #middle-box {
     display: none;
   }
@@ -85,12 +85,8 @@ input::placeholder {
     display: block;
   }
 }
-@media only screen and (max-width: 768px) {
-  #right-box {
-    display: none;
-  }
-}
 
+/* mobile and desktop view btns */
 @media only screen and (min-width: 600px) {
   @media only screen and (min-width: 768px) {
     #close {
