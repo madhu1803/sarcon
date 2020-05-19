@@ -187,7 +187,7 @@
                     <div class="recent px-4 py-2 bg-white">
                         <!--online-->
                         <p class="h5 mb-0 py-1"> <img src="https://img.icons8.com/flat_round/25/000000/back--v1.png"
-                                class="ml-0 mr-2" id="online-close" onclick="onlineClose()" />
+                                class="ml-0 mr-2" id="online-close" onclick="arrowClose()" />
                             Online</p>
                     </div>
                     <!--online users list-->
@@ -244,7 +244,7 @@
 
         // init the boxes on the mobile view
         if ($(window).width() < 768) {
-            alert("btn")
+
             document.getElementById("left-box").style.display = "block"
             document.getElementById("middle-box").style.display = "none"
             document.getElementById("right-box").style.display = "none"
@@ -270,6 +270,7 @@
                 if (document.getElementById("left-box").style.display === "block") {
                     document.getElementById("left-box").style.display = "none"
                     document.getElementById("middle-box").style.display = "block"
+                    document.getElementById("right-box").style.display = "none"
                 } else {
                     document.getElementById("left-box").style.display = "block"
                     document.getElementById("middle-box").style.display = "none"
@@ -289,7 +290,7 @@
             }
         }
         //online user close btn
-        function onlineClose() {
+        function arrowClose() {
             // on clicked close button
             if ($(window).width() < 768) {
                 // execute only on mobile view || screen size is less thatn 768px
@@ -297,6 +298,7 @@
                 if (document.getElementById("right-box").style.display === "block") {
                     document.getElementById("middle-box").style.display = "block"
                     document.getElementById("left-box").style.display = "none"
+                    document.getElementById("right-box").style.display = "none"
                 }
             }
         }
