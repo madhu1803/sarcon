@@ -177,7 +177,14 @@
             document.getElementById("left-box").style.display = "block"
             document.getElementById("right-box").style.display = "none"
         }
+        //resize left and right box for desktop view
+        $(window).resize(function () {
+            if ($(window).width() > 768) {
+                document.getElementById("left-box").style.display = "block"
+                document.getElementById("right-box").style.display = "block"
+            }
 
+        });
         function showMessage() {
             // on clicked
             if ($(window).width() < 768) {
