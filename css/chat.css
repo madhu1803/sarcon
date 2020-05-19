@@ -80,3 +80,8 @@ input::placeholder {
         }
     }
 }
+
+#button-addon2 {
+    background-image: linear-gradient(90deg, #EE5D53 10%, #ED5165 30%, #DE3964 60%);
+
+}
