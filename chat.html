@@ -244,14 +244,21 @@
 
         // init the boxes on the mobile view
         if ($(window).width() < 768) {
+            alert("btn")
             document.getElementById("left-box").style.display = "block"
             document.getElementById("middle-box").style.display = "none"
+            document.getElementById("right-box").style.display = "none"
         }
         //resize left and right box for desktop view
         $(window).resize(function () {
             if ($(window).width() > 768) {
                 document.getElementById("left-box").style.display = "block"
                 document.getElementById("middle-box").style.display = "block"
+                document.getElementById("right-box").style.display = "block"
+            }
+            else {
+                document.getElementById("middle-box").style.display = "none"
+                document.getElementById("right-box").style.display = "none"
             }
 
         });

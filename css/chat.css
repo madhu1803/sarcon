@@ -85,6 +85,11 @@ input::placeholder {
     display: block;
   }
 }
+@media only screen and (max-width: 768px) {
+  #right-box {
+    display: none;
+  }
+}
 
 @media only screen and (min-width: 600px) {
   @media only screen and (min-width: 768px) {
@@ -92,6 +97,9 @@ input::placeholder {
       display: none;
     }
     #online {
+      display: none;
+    }
+    #online-close {
       display: none;
     }
   }
