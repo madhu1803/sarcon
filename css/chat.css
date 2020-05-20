@@ -73,19 +73,7 @@ input::placeholder {
     #4ebeda 60%
   ) !important;
 }
-/* tab-mobile view */
-/* @media only screen and (max-width: 992px) {
-  #middle-box {
-    display: none;
-  }
-  #right-box {
-    display: none;
-  }
-  #left-box {
-    display: block;
-  }
-} */
-
+/* breakpoint till large screenss */
 @include media-breakpoint-up(lg) {
   #middle-box {
     display: none;
