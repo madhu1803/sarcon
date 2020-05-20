@@ -1,6 +1,5 @@
 body {
   background-color: #002f9d;
-
   min-height: 100vh;
 }
 
@@ -28,10 +27,6 @@ body {
 .chat-box {
   height: 650px;
   overflow-y: scroll;
-}
-
-.rounded-lg {
-  border-radius: 0.5rem;
 }
 
 input::placeholder {
@@ -81,29 +76,8 @@ input::placeholder {
   border-radius: 15px 50px 30px !important;
   box-shadow: 4px 4px #dcdcdc !important;
 }
-/* breakpoint till desktop */
-@include media-breakpoint-up(lg) {
-  #middle-box {
-    display: none;
-  }
-  #right-box {
-    display: none;
-  }
-  #left-box {
-    display: none;
-  }
-  #close {
-    display: none;
-  }
-  #online {
-    display: none;
-  }
-  #online-close {
-    display: none;
-  }
-}
 
-/* mobile and tablet view btns */
+/* mobile and tablet view btns till a min width of 992px -the buttons are not displayed */
 @media only screen and (min-width: 992px) {
   @media only screen and (min-width: 768px) {
     #close {
