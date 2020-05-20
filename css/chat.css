@@ -116,3 +116,13 @@ input::placeholder {
       #4ebeda 60%);
   color: white;
 }
+
+/* section 1 border to remove the gap */
+.section1-border {
+  border-bottom: 15.6px solid #2d2e33;
+}
+
+/* section3 */
+#section3 {
+  padding-bottom: 23px !important;
+}
