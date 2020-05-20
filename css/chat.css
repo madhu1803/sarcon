@@ -45,7 +45,7 @@ input::placeholder {
 }
 
 .chat-box {
-  background-color: #f3f3f3 !important;
+  background-color: #f1f1f1 !important;
 }
 
 .recent {
@@ -72,6 +72,13 @@ input::placeholder {
     #409de2 30%,
     #4ebeda 60%
   ) !important;
+  border: 0.5px solid #002f9d !important;
+  border-radius: 15px !important;
+}
+
+.rounded {
+  border: 0.5px solid lightgrey !important;
+  border-radius: 15px !important;
 }
 /* breakpoint till desktop */
 @include media-breakpoint-up(lg) {
@@ -95,7 +102,7 @@ input::placeholder {
   }
 }
 
-/* mobile and desktop view btns */
+/* mobile and tablet view btns */
 @media only screen and (min-width: 992px) {
   @media only screen and (min-width: 768px) {
     #close {
