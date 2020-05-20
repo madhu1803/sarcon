@@ -73,7 +73,7 @@ input::placeholder {
     #4ebeda 60%
   ) !important;
 }
-/* breakpoint till large screenss */
+/* breakpoint till desktop */
 @include media-breakpoint-up(lg) {
   #middle-box {
     display: none;
@@ -109,7 +109,7 @@ input::placeholder {
     }
   }
 }
-/* buttons color */
+
 #button-addon2 {
   background-image: linear-gradient(
     90deg,
