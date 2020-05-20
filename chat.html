@@ -39,7 +39,7 @@
 
         <div class="row rounded-lg overflow-hidden shadow">
             <!-- Users box-->
-            <div class="col-md-4 px-0" id="left-box">
+            <div class="col-lg-4 px-0" id="left-box">
                 <div class="bg-white">
 
                     <div class="recent px-4 py-2 bg-white">
@@ -88,7 +88,7 @@
                 </div>
             </div>
             <!-- Chat Box-->
-            <div class="col-md-5 px-0 " id="middle-box">
+            <div class="col-lg-5 px-0 " id="middle-box">
 
 
 
@@ -166,7 +166,7 @@
 
             </div>
             <!--online or poll ares-->
-            <div class="col-md-3 px-0 " id="right-box">
+            <div class="col-lg-3 px-0 " id="right-box">
                 <div class="bg-white">
 
                     <div class="recent px-4 py-2 bg-white">
@@ -228,14 +228,14 @@
     <script>
 
         // init the boxes on the mobile view
-        if ($(window).width() < 768) {
+        if ($(window).width() <= 992) {
             document.getElementById("left-box").style.display = "block"
             document.getElementById("middle-box").style.display = "none"
             document.getElementById("right-box").style.display = "none"
         }
         //resize left and right box for desktop view
         $(window).resize(function () {
-            if ($(window).width() > 768) {
+            if ($(window).width() >= 992) {
                 document.getElementById("left-box").style.display = "block"
                 document.getElementById("middle-box").style.display = "block"
                 document.getElementById("right-box").style.display = "block"
@@ -248,7 +248,7 @@
         });
         function showMessage() {
             // on clicked
-            if ($(window).width() < 768) {
+            if ($(window).width() <= 992) {
                 // execute only on mobile view || screen size is less thatn 768px
                 // basic toggle operation...
                 if (document.getElementById("left-box").style.display === "block") {
@@ -264,7 +264,7 @@
         // chat close btn
         function closeMessage() {
             // on clicked close button
-            if ($(window).width() < 768) {
+            if ($(window).width() <= 992) {
                 // execute only on mobile view || screen size is less thatn 768px
                 // basic toggle operation...
                 if (document.getElementById("middle-box").style.display === "block") {
@@ -276,7 +276,7 @@
         //online user close btn
         function arrowClose() {
             // on clicked close button
-            if ($(window).width() < 768) {
+            if ($(window).width() <= 992) {
                 // execute only on mobile view || screen size is less thatn 768px
                 // basic toggle operation...
                 if (document.getElementById("right-box").style.display === "block") {
@@ -288,7 +288,7 @@
         }
         //online icon
         function online() {
-            if ($(window).width() < 768) {
+            if ($(window).width() <= 992) {
                 // execute only on mobile view || screen size is less thatn 768px
                 // basic toggle operation...
 
