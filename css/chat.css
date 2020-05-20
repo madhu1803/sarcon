@@ -73,12 +73,13 @@ input::placeholder {
     #4ebeda 60%
   ) !important;
   border: 0.5px solid #002f9d !important;
-  border-radius: 15px !important;
+  border-radius: 15px 50px 30px !important;
 }
 
 .rounded {
   border: 0.5px solid lightgrey !important;
-  border-radius: 15px !important;
+  border-radius: 15px 50px 30px !important;
+  box-shadow: 4px 4px #dcdcdc !important;
 }
 /* breakpoint till desktop */
 @include media-breakpoint-up(lg) {
