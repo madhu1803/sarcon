@@ -14,7 +14,7 @@
     <a href="https://icons8.com/icon/473/online"></a>
 </head>
 
-<body>
+<body onload="hide()">
     <!--NAV BAR-->
     <nav class="navbar navbar-light  ">
         <a class="navbar-brand text-white" href="#">
@@ -389,6 +389,10 @@
 
                 }
             }
+        }
+        //body onload
+        function hide() {
+            $('#chat-box-2').toggle("linear");
         }
         function dropdown(id) {
             $("#" + id).toggle("linear");
